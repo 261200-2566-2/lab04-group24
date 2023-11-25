@@ -10,8 +10,8 @@ Design a RPG Character Interface
         default void showCharacterInfo() : print ค่าของ name, level, job, accessory และ equipment ออกมา
 
     Interfaces Job extends RPGCharacter :
-        void getJobName() : get อาชีพตัวละคร
-        void getAbility(int) : get Ability ลำดับที่ int ที่รับมาของอาชีพนั้นๆ
+        String getJobName() : get อาชีพตัวละคร
+        String getAbility(int) : get Ability ลำดับที่ int ที่รับมาของอาชีพนั้นๆ
         default void showAllAbilities() : print jobName, getAbility(1), getAbility(2); ((ตอนนี้) มี 2 สกิล)
 
     Interface Warrior extends Job :
