@@ -1,3 +1,5 @@
+package code;
+
 import code.Accessory;
 import code.Equipment;
 import code.RPGCharacter;
