@@ -23,12 +23,13 @@
 
 ## Classes
 
-### `Amulet` extends `BaseAccessory` implements `Accessory`:
+### `Amulet` extends `BaseAccessory`:
 - `Constructor`: Initialize ค่า effectType, effectValue super(//effectType, effectValue ที่รับเข้ามา)
 
-### `Ring` extends `BaseAccessory` implements `Accessory`:
+### `Ring` extends `BaseAccessory`:
 - `Constructor`: Initialize ค่า effectType, effectValue super(//effectType, effectValue ที่รับเข้ามา)
 
-### `Earring` extends `BaseAccessory` implements `Accessory`:
+### `Earring` extends `BaseAccessory`:
 - `Constructor`: Initialize ค่า effectType, effectValue super(//effectType, effectValue ที่รับเข้ามา)
 
+![Local Image](AccessoryInterfaceDiagram.png)

@@ -14,13 +14,13 @@ Abstract class BaseAccessory implements Accessory
         String getEffectType() : get ประเภทของ effect ของ Accessory
         int getEffectValue() : get ค่าของ effect ของ Accessory
 
-Class Amulet implements Accessory
+Class Amulet
     Constructor : เซ็ตค่า effectType, effectValue super(//effectType, effectValue ที่รับเข้ามา)
 
-Class Ring implements Accessory
+Class Ring
     Constructor : เซ็ตค่า effectType, effectValue super(//effectType, effectValue ที่รับเข้ามา)
 
-Class Earring implements Accessory
+Class Earring
     Constructor : เซ็ตค่า effectType, effectValue super(//effectType, effectValue ที่รับเข้ามา)
 
 

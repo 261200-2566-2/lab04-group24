@@ -50,7 +50,7 @@
 - `Earring earring`: ต่างหูที่ตัวละครสวมใส่
 
 #### Methods:
-- `Constructor`: Initialize stats ของตัวละคร
+- `Constructor`: Initialize ค่า stats ของตัวละคร
 - `void showStats()`: Print ค่า Stats ของตัวละคร ณ ปัจจุบัน
 - `String getName()`: Get ชื่อตัวละคร
 - `int getLevel()`: Get เลเวลตัวละคร
@@ -75,3 +75,4 @@
 - `void shot()`: ใช้ ability Shot ของ Archer
 - `void dodge()`: ใช้ ability Dodge ของ Archer
 
+![Local Image](RPGCharacterInterfaceDiagram.png)

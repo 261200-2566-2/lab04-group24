@@ -55,7 +55,7 @@ Design a RPG Character Interface
             int getLevel() : get เลเวลตัวละคร
             void levelUp() : อัพเลเวลตัวละครทีละ 1 level และอัพเดท stats ใหม่
             void equipAccessory(Accessory) : เพิ่ม Accessory โดยการ cast ไป amulet/ring/earring ตามtype และถ้ามีของสวมใส่อยู่แล้วจะใส่แทนที่ของเดิม และคำนวนค่า Stats ตาม effectType และ effectValue ของ Accessory ที่สวมใส่
-            void equipEquipment(Equipment) : เพิ่ม Equipment โดยการ cast ไป mainHand/subHand ตามtype และถ้ามีของสวมใส่อยู่แล้วจะใส่แทนที่ของเดิม และคำนวนค่า Stats ตามอาวุธหลัก และอาวุธรองที่สวมใส่
+            void equipEquipment(Equipment) : เพิ่ม Equipment โดยการ cast ไป mainHand/subHand ตามtype และถ้ามีของสวมใส่อยู่แล้วจะใส่แทนที่ของเดิม และคำนวนค่า Stats ตามอาวุธหลัก และอาวุธรองที่สวมใส่ และแต่ละอาชีพก็ใส่ของได้ไม่เหมือนกัน
 
     class WarriorCharacter extends BaseCharacter implements Warrior :
             Constructor : เซ็ตค่า Stats เริ่มต้นของ Warrior (super(//stats เริ่มต้นของ Warrior))
