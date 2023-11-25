@@ -7,14 +7,14 @@
 - `int getLevel()`: Get เลเวลตัวละคร
 - `String getJobName()`: Get อาชีพตัวละคร
 - `void levelUp()`: อัพเลเวลตัวละครทีละ 1 level และอัพเดท stats ใหม่
-- `Accessory getEquippedAccessory()`: Get Accessory ที่ตัวละครสวมใส่อยู่
-- `Equipment getEquippedEquipment()`: Get Equipment ที่ตัวละครสวมใส่อยู่
+- `Accessory[] getEquippedAccessory()`: Get Accessory ที่ตัวละครสวมใส่อยู่
+- `Equipment[] getEquippedEquipment()`: Get Equipment ที่ตัวละครสวมใส่อยู่
 - `default void showCharacterInfo()`: Print ค่าของ name, level, job, accessory และ equipment
 
 ### `Job` extends `RPGCharacter`:
-- `void getJobName()`: Get อาชีพตัวละคร
-- `void getAbility(int)`: Get Ability ลำดับที่ int ที่รับมาของอาชีพนั้นๆ
-- `default void showAllAbilities()`: Print jobName, getAbility(1), getAbility(2); ((ตอนนี้) มี 2 สกิล)
+- `String getJobName()`: Get อาชีพตัวละคร
+- `String getAbility(int)`: Get Ability ลำดับที่ int ที่รับมาของอาชีพนั้นๆ
+- `default void showAllAbilities()`: Print jobName, getAbility(1), getAbility(2); ((ตอนนี้) แต่ละอาชีพมีแค่ 2 สกิล)
 
 ### `Warrior` extends `Job`:
 - `void slash()`: ใช้ ability Slash ของ Warrior
