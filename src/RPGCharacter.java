@@ -166,7 +166,7 @@ class MageCharacter extends  BaseCharacter implements  Mage{
     }
 
     public void castSpell() {
-        System.out.println("castSpell !!");
+        System.out.println("castspell !!");
     }
 
     public void teleport() {
