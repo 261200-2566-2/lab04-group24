@@ -1,17 +1,33 @@
+import code.Accessory;
+import code.Equipment;
+import code.RPGCharacter;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // For testing
+        RPGCharacter james = new WarriorCharacter("James");
+        james.showCharacterInfo();
+        System.out.println("======================================");
+        Accessory blood = new Ring("Vampire's Ring", "Life steal", 0.155);
+        Equipment sword = new SubWeapon("James's Legacy", 30, 10);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        james.equipAccessory(blood);
+        james.equipEquipment(sword);
+        System.out.println("======================================");
+        james.levelUp();
+        System.out.println("======================================");
+        james.showCharacterInfo();
+        System.out.println("======================================");
+
+        System.out.println("Sword Damage : " + sword.getMainStat());
+        sword.upgrade();
+        System.out.println("Sword Damage : " + sword.getMainStat());
+        System.out.println("======================================");
+
+        blood.showStats();
+
     }
 }
